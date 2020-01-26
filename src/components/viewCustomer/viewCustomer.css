@@ -10,3 +10,29 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  .person {
+    width: 15%;
+    height: auto;
+  }
+
+  .firstname{
+    position: fixed;
+    bottom: 520px;
+    right: 420px;
+    width: 200px;
+  }
+  
+  .lastname{
+    position: fixed;
+    bottom: 490px;
+    right: 420px;
+    width: 200px;
+  }
+
+  .phone{
+    position: fixed;
+    bottom: 450px;
+    right: 420px;
+    width: 200px;
+  }

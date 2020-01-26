@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom'
 import OrderList from '../OrderList/OrderList';
 import Button from '@material-ui/core/Button';
 import './viewCustomer.css';
+import PersonIcon from '@material-ui/icons/Person';
 
 class viewCustomer extends Component {
 
@@ -96,12 +97,14 @@ class viewCustomer extends Component {
                 <div>
                     {this.props.reduxState.veiwCustomer.map( (item) =>
                     <div key= {item.id}>
-                        <p>First Name: {item.first_name}</p>
-                        <p>Last Name: {item.last_name}</p>
-                        <p>Phone Number: {item.phone_number}</p>
-                        <Button variant="contained" color="primary" onClick={this.editCustomer}>Edit</Button>
+                        <PersonIcon variant="contained" class='person'></PersonIcon>
+                        <p class='firstname'>First Name: {item.first_name}</p>
+                        <p class='lastname'>Last Name: {item.last_name}</p>
+                        <p class='phone'>contact : {item.phone_number}</p>
                         <br></br>
-                        <Button className='button' variant="contained" color="primary" onClick={() => this.addPurchase(item.id)}>Purchase</Button>
+                        <Button variant="contained" className='edit' color="primary" onClick={this.editCustomer}>Edit</Button>
+                        <br></br>
+                        <Button variant="contained" color="primary" onClick={() => this.addPurchase(item.id)}>Purchase</Button>
                         </div>)}
                         <br></br>
                 </div>
