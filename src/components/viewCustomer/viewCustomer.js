@@ -99,11 +99,13 @@ class viewCustomer extends Component {
                         <p>First Name: {item.first_name}</p>
                         <p>Last Name: {item.last_name}</p>
                         <p>Phone Number: {item.phone_number}</p>
+                        <Button variant="contained" color="primary" onClick={this.editCustomer}>Edit</Button>
+                        <br></br>
                         <Button className='button' variant="contained" color="primary" onClick={() => this.addPurchase(item.id)}>Purchase</Button>
                         </div>)}
                         <br></br>
                 </div>
-                <Button variant="contained" color="primary" onClick={this.editCustomer}>Edit</Button>
+                {/* <Button variant="contained" color="primary" onClick={this.editCustomer}>Edit</Button> */}
                 <hr></hr>
             <br></br>
             <OrderList/>
