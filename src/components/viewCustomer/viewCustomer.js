@@ -97,19 +97,24 @@ class viewCustomer extends Component {
                 <div>
                     {this.props.reduxState.veiwCustomer.map( (item) =>
                     <div key= {item.id}>
+                        <div class='column'>
                         <PersonIcon variant="contained" class='person'></PersonIcon>
-                        <p class='firstname'>First Name: {item.first_name}</p>
-                        <p class='lastname'>Last Name: {item.last_name}</p>
-                        <p class='phone'>contact : {item.phone_number}</p>
+                        </div>
+                        <div class='column'>
+                        <p class='firstname' >First Name: {item.first_name}</p>
+                        <p class='lastname' >Last Name: {item.last_name}</p>
+                        <p class='phone' >contact : {item.phone_number}</p>
                         <br></br>
-                        <Button variant="contained" className='edit' color="primary" onClick={this.editCustomer}>Edit</Button>
+                        <Button variant="contained" className='edit' color='default' onClick={this.editCustomer} >Edit</Button>
+                        </div>
                         <br></br>
-                        <Button variant="contained" color="primary" onClick={() => this.addPurchase(item.id)}>Purchase</Button>
+                        <Button variant="contained" color="default" onClick={() => this.addPurchase(item.id)}>
+                            Purchase</Button>
                         </div>)}
-                        <br></br>
+                        
                 </div>
                 {/* <Button variant="contained" color="primary" onClick={this.editCustomer}>Edit</Button> */}
-                <hr></hr>
+                
             <br></br>
             <OrderList/>
             </>

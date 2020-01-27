@@ -108,7 +108,7 @@ class viewPurchase extends Component {
                 <input placeholder='price' onChange={this.handlePrice} value={this.state.price}></input>
                 <button onClick={this.handleAdd}>Add</button>
             </div>
-            {JSON.stringify(this.props.reduxState.items)};
+            {/* {JSON.stringify(this.props.reduxState.items)}; */}
             <section>
                     <Table>
                         <TableHead>

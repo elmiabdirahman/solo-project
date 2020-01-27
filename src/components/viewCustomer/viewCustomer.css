@@ -11,28 +11,34 @@
     cursor: pointer;
   }
 
+  .column{
+    margin-right: 30px;
+    margin-bottom: 9px;
+    display: inline-block;
+  }
+
   .person {
-    width: 15%;
+    width: 160px;
     height: auto;
   }
 
-  .firstname{
+  /* .firstname{
+    position: fixed;
+    bottom: 550px;
+    right: 1000px;
+    width: 200px;
+  } */
+  
+  /* .lastname{
     position: fixed;
     bottom: 520px;
-    right: 420px;
+    right: 1000px;
     width: 200px;
-  }
-  
-  .lastname{
+  } */
+
+  /* .phone{
     position: fixed;
     bottom: 490px;
-    right: 420px;
+    right: 1000px;
     width: 200px;
-  }
-
-  .phone{
-    position: fixed;
-    bottom: 450px;
-    right: 420px;
-    width: 200px;
-  }
+  } */
