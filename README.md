@@ -19,14 +19,14 @@ For my solo project, I want to build an app that would help and make it easy for
 6. The `npm run client` command will open up a new browser tab for you!
 
 ## Technologies
-Node
-Express
-React
-Redux
-Sagas
-Passport
-Postgresql
-Material ui 
+- Node
+- Express
+- React
+- Redux
+- Sagas
+- Passport
+- Postgresql
+- Material ui 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
