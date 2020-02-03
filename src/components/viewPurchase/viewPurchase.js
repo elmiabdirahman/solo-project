@@ -10,6 +10,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete'
+import TextField from '@material-ui/core/TextField';
 
 class viewPurchase extends Component {
     state = {
@@ -137,19 +138,19 @@ class viewPurchase extends Component {
                     <div className= "modal-box">
                     {this.state.open && <>
                         <p>Total: $ {this.state.total}</p>
-                        <input type='text' placeholder='$' onChange={this.handlePaid} value={this.state.paid}></input>
+                        <TextField type='text' placeholder='$' onChange={this.handlePaid} value={this.state.paid}></TextField>
                         <br></br>
                         {/* {JSON.stringify(this.props.reduxState.newOrder)} */}
-                        <button 
+                        <Button 
                         variant="contained" color="primary" 
-                        onClick={this.handleCheckOut}>Check Out</button>
+                        onClick={this.handleCheckOut}>Check Out</Button>
                         </>
                         }
                         </div>
                     
                     </Modal>
                     </div>
-                    <Button variant="outlined" color="primary"onClick={this.handleSubmit}>Submit</Button>
+                    <Button variant="outlined" color="primary"onClick={this.handleSubmit} style={{margin: '10px'}}>Submit</Button>
                 </section>
             {/* <ItemList /> */}
             </>

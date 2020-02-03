@@ -5,6 +5,7 @@ import OrderList from '../OrderList/OrderList';
 import Button from '@material-ui/core/Button';
 import './viewCustomer.css';
 import PersonIcon from '@material-ui/icons/Person';
+import TextField from '@material-ui/core/TextField';
 
 class viewCustomer extends Component {
 
@@ -121,10 +122,10 @@ class viewCustomer extends Component {
         ) : (
             <>
             <p></p>
-            <input placeholder='First Name' onChange={this.handleChangeFirst} value={this.state.first_Name}  />
-            <input placeholder='Last Name' onChange={this.handleChangeLast} value={this.state.last_name} />
-            <input placeholder='Phone Number' onChange={this.handleChangeContact} value={this.state.phone_number}/>
-            <button onClick={this.saveCustomer}>Save</button>
+            <TextField placeholder='First Name' onChange={this.handleChangeFirst} value={this.state.first_Name}  />
+            <TextField placeholder='Last Name' onChange={this.handleChangeLast} value={this.state.last_name} />
+            <TextField placeholder='Phone Number' onChange={this.handleChangeContact} value={this.state.phone_number}/>
+            <Button onClick={this.saveCustomer}>Save</Button>
             </>
         )
 
